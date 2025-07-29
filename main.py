@@ -8,7 +8,7 @@ import google.generativeai as genai
 # --- Configuration ---
 # Configure the Gemini API key from environment variables for security
 try:
-    genai.configure(api_key="")
+    genai.configure(api_key="Put API Key here")
 except KeyError:
     print("FATAL ERROR: The GOOGLE_API_KEY environment variable is not set.")
     print("Please get an API key from Google AI Studio and set the environment variable.")
