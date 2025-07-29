@@ -1,0 +1,180 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc} % Added for better font encoding and hyphenation
+\usepackage{lmodern}     % Added for a modern font that supports more glyphs
+
+% \input{glyphtounicode} % Usually not needed with hyperref and T1 fontenc
+% \pdfgentounicode=1     % Usually not needed with hyperref and T1 fontenc
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small #3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{ % Ensure this has two arguments
+\item
+\begin{tabularx}{\textwidth}{X r}
+\small #1 & \small #2 \\ % Added \small to #2 for consistency if it's used for dates
+\end{tabularx}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+\begin{center}
+\textbf{\Huge \scshape Shivansh Kalra} \ \vspace{1pt}
+\small +91-9717094960 
+~|~ % Replaced ∣ with ~|~
+ \href{https://linkedin.com/in/shivansh-kalra}{\underline{linkedin.com/in/shivansh-kalra}} 
+~|~ % Replaced ∣ with ~|~
+\href{https://github.com/shivansh193}{\underline{github.com/shivansh193}}
+\end{center}
+
+\section*{Summary}
+\vspace{-5pt}
+\small{Aspiring Product Manager with a strong Full Stack Development foundation (React.js, Node.js, MongoDB) and a passion for building user-centric, scalable SaaS platforms. Proven ability to identify user needs, translate them into technical solutions, and drive product development in fast-paced startup environments. Eager to leverage technical expertise, analytical skills, and a data-informed approach to contribute to impactful product strategies and roadmaps.}
+\vspace{4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Shiv Nadar University}{Noida, India}
+{Bachelor of Technology in Computer Science}{Aug. 2023 -- Present}
+\resumeSubheading
+{Amity International School}{Gurgaon, India}
+{High School Diploma, PCM Major}{May 2020 -- June 2022}
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Full Stack Development}{: React.js, Node.js, Express.js (Proficient), MongoDB, MERN Stack, TypeScript (Advanced), JavaScript (ES6+), HTML5, CSS3} \\
+\textbf{Backend \& APIs}{: RESTful APIs, Python (Flask), Service-Oriented Architecture, SQL (PostgreSQL), Firebase (NoSQL)} \\ % Escaped &
+\textbf{Frontend Technologies}{: State Management (Redux, Context API), Navigation (React Navigation), Animations (Reanimated), Responsive Design} \\
+\textbf{Product \& Strategy}{: User Research, Market Analysis (Basic), A/B Testing (Conceptual), Roadmapping, Agile/Scrum, Prototyping, Wireframing (Figma), Competitive Analysis, Data Analysis, User Story Creation, Backlog Grooming} \\ % Escaped &
+\textbf{Tools \& DevOps}{: Git, Jira, Figma, Postman, Docker (Familiarity), CI/CD Practices (Vercel), Agile Methodologies} \\ % Escaped &
+\textbf{Concepts}{: Object-Oriented Design, Clean Code, Data Structures \& Algorithms, Scalable Systems, Problem Solving, Startup Mindset (Ship Fast, Iterate Faster), User-Centric Design} % Escaped &
+}}
+\end{itemize}
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://product-roadmap-beta.vercel.app}{\textbf{BuildFlow}} 
+~|~ % Replaced ∣
+ \emph{React, TypeScript, Next.js, Vercel, API Integration, CSS}}{}
+\resumeItemListStart
+\resumeItem{Identified a market need for accessible project roadmap tools, leading to the design, development, and launch of a full-stack SaaS web application.}
+\resumeItem{Defined core product features based on potential user workflows, enabling users to create, manage, and share roadmaps; attracted 200+ active users and 500+ roadmaps in 2 months.}
+\resumeItem{Iteratively improved UI/UX based on user feedback and engagement metrics, ensuring cross-device compatibility and intuitive navigation; deployed on Vercel with CI/CD.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\href{https://catalystiqplat.vercel.app}{\textbf{CatalystIQ Hub}} ~|~ \emph{React, TypeScript, Python (Flask), REST APIs, Figma}}{} % Replaced ∣
+  \resumeItemListStart
+    \resumeItem{Conceptualized and engineered a hiring platform to streamline recruitment, translating user needs identified from market gaps and Figma designs into a functional UX.}
+    \resumeItem{Defined data models and API specifications (Python/Flask backend) to support core platform features, resulting in a system aimed at improving hiring decision efficiency by 20\%.}
+    \resumeItem{Prioritized development of reusable UI components (TypeScript) to ensure product scalability and maintainability, focusing on a robust user experience.}
+  \resumeItemListEnd
+  
+\resumeProjectHeading
+  {\href{https://catalystiq.fun}{\textbf{WEHIndia}} ~|~ \emph{Next.js (React), TypeScript, Firebase (NoSQL), CSS}}{} % Replaced ∣
+  \resumeItemListStart
+    \resumeItem{Contributed to an event-vendor matching platform by developing key frontend features, addressing user needs for responsive UI and real-time data synchronization with Firebase.}
+    \resumeItem{Implemented complex UI components and state management, focusing on enhancing user interaction with dynamic data and ensuring type safety for platform stability.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{DeBi} ~|~ \emph{Solidity, Hardhat, Ethers.js (JavaScript), Blockchain}}{} % Replaced ∣
+  \resumeItemListStart
+    \resumeItem{Explored decentralized solutions for fundraising by developing a platform using Solidity and Ethers.js, defining core functionalities and smart contract logic to address transparency needs.}
+    \resumeItem{Demonstrated understanding of blockchain's potential for novel product applications by building a full-stack (JavaScript for frontend) decentralized application.}
+  \resumeItemListEnd
+
+ \resumeProjectHeading
+  {\href{https://www.kaggle.com/code/pustak/chainedthought}{\textbf{ChainedThought}} ~|~ \emph{Python, API SDK, Problem Solving}}{} % Replaced ∣
+  \resumeItemListStart
+    \resumeItem{Applied advanced problem-solving techniques to analyze complex data processing tasks, leveraging Python and external APIs to develop innovative solutions.}
+    \resumeItem{Showcased ability to quickly learn and integrate new technologies to extract insights and deliver practical outcomes from data challenges.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Testline}{Remote}
+  {Product Management Intern}{Dec. 2024 -- Feb. 2025}
+  \resumeItemListStart
+    \resumeItem{Spearheaded the development of a new product feature from ideation to launch, utilizing user feedback and competitive analysis to achieve a 15\% increase in user retention.}
+    \resumeItem{Analyzed user signup processes using AI-based clustering, identifying key friction points and contributing to an 11\% reduction in drop-off rates.}
+    \resumeItem{Collaborated on 3 AI-focused internal marketing tools, successfully reaching over 3000 users and boosting platform engagement.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Frontrunner}{Remote}
+  {Technical Product Development Intern}{May 2024 -- Aug. 2024}
+  \resumeItemListStart
+    \resumeItem{Drove a 40\% increase in monthly revenue by creating 5 new income streams and prototyping 2 AI-based product MVPs.}
+    \resumeItem{Conducted user testing with 25+ founders, iterating on product improvements that significantly reduced customer churn.}
+    \resumeItem{Accelerated product development cycles by 30\% and enhanced team communication by implementing agile methodologies.}
+  \resumeItemListEnd
+  
+\resumeSubheading
+  {\href{https://catalystiqplat.vercel.app}{CatalystIQ}}{Gurgaon, India}
+  {Founder \& Product Lead}{Jan. 2024 -- April 2024}
+  \resumeItemListStart
+    \resumeItem{Built and launched an AI-powered business solutions platform, achieving an 18\% user conversion rate and reducing data processing time by 30\%.}
+    \resumeItem{Generated over ₹1 Lakh in revenue by securing collaborations with 10+ FMCG companies, leading to a 15\% quarterly growth.}
+    \resumeItem{Engineered a machine learning-based hiring system using bit-task assignments, reducing the typical hiring time by over 65\%.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {\href{https://petner-plat.vercel.app}{Petner}}{Remote}
+  {Founder \& Product Developer}{Apr. 2023 -- Dec. 2023}
+  \resumeItemListStart
+    \resumeItem{Scaled a pet-care platform using AI recommendations, securing partnerships with 25+ local businesses and onboarding 100+ users to a successful pilot program.}
+    \resumeItem{Led the end-to-end product lifecycle, from ideation and full-stack development (React Native, Firebase) to real-world prototype validation.}
+    \resumeItem{Managed the full-stack architecture and integrated real-time data pipelines to improve service matching and user experience.}
+  \resumeItemListEnd
+  
+\resumeSubHeadingListEnd
+
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeItem{Top 100 Finalist - Google Gemini Hackathon (Demonstrated rapid ideation, learning, and application of new APIs to build functional prototypes solving defined problems)}
+\resumeItem{ETHIndia 2023 Top 100 Project (Showcased ability to innovate, define a problem, and rapidly prototype user-focused solutions under pressure)}
+\resumeItem{Solana HackerHouse Top 10 Projects (Further evidence of problem-solving, solution development, and product pitching)}
+\resumeItem{IITB Eureka 2022 SemiFinalist (Recognized for entrepreneurial concept, market viability assessment, and early-stage product definition)}
+\resumeSubHeadingListEnd
+\end{document}
